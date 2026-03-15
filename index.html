@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html>
     <head>
+
+        <!-- responsive design metadata -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
         <title>Juan Carlos Reyes</title>
         <link type="text/css" rel="stylesheet" href="css/mystylesheet.css"/>
     </head>
@@ -20,52 +24,49 @@
             </div>   
         </header>
 
-        <main>
+        <main>           
+            <section>  
+                <p>Hi! I'm <button onClick="changeContent('main'); changeImage('images/jc-main-pic.png');">JC</button>, 
+                    a student at the University of the Philippines Open University. 
+                    <br/>
+                    I currently work in the semiconductor industry as a 
+                    <button onClick="changeContent('work'); changeImage('images/my-work.png');">wafer test engineer</button>.
+                    <br />
+                    I love <button onClick="changeContent('bicycles'); changeImage('images/jc-campy.png')">bicycles</button> and 
+                    <button onClick="changeContent('cycling'); changeImage('images/jc-bike.png')">cycling</button>, 
+                    though I ride lot less now.
+                    <br />
+                    I like joining <button onClick="changeContent('running'); changeImage('images/jc-run.png')">fun runs</button>.
+                    <br />
+                    I have a <button onClick="changeContent('tsundoku'); changeImage('images/jc-books.png')">tsundoku</button>
+                    -- which I plan (hope) to read when I retire...
+                </p>
+            </section>
 
-            <div class="container">
-                <section>  
-                    <p>Hi! I'm <button onClick="changeContent('main'); changeImage('images/jc-main-pic.png');">JC</button>, 
-                        a student at the University of the Philippines Open University. 
-                        <br/>
-                        I currently work in the semiconductor industry as a 
-                        <button onClick="changeContent('work'); changeImage('images/my-work.png');">wafer test engineer</button>.
-                        <br />
-                        I love <button onClick="changeContent('bicycles'); changeImage('images/jc-campy.png')">bicycles</button> and 
-                        <button onClick="changeContent('cycling'); changeImage('images/jc-bike.png')">cycling</button>, 
-                        though I ride lot less now.
-                        <br />
-                        I like joining <button onClick="changeContent('running'); changeImage('images/jc-run.png')">fun runs</button>.
-                        <br />
-                        I have a <button onClick="changeContent('tsundoku'); changeImage('images/jc-books.png')">tsundoku</button>
-                        -- which I plan (hope) to read when I retire...
+            <div class="wrappable-container">        
+                <section class="centered container-content">
+                    <img class="medium" id="display-image" src="images/jc-main-pic.png" alt="jc's images"/>
+                </section>
+                <section class="container-content">
+                    <p id="display-text">
+                        Hello there!
                     </p>
                 </section>
-
-                <div class="wrappable-container">        
-                    <section class="centered container-content">
-                        <img class="medium" id="display-image" src="images/jc-main-pic.png" alt="jc's images"/>
-                    </section>
-                    <section class="container-content">
-                        <p id="display-text">
-                            Hello there!
-                        </p>
-                    </section>
-                </div>
-
-            </div>
+            </div>            
         </main>
 
         <footer>
             <address>
                 <p>
-                    You can contact through email at: <a href="sabadoride@gmail.com">sabadoride@gmail.com</a>
+                    You can contact through email at: <a>sabadoride@gmail.com</a>
                     <br />
                     or find me on:
                 </p>
                 <nav>
                     <ul>
-                        <li><a href="https://www.linkedin.com">linkedin</a></li>
-                        <li><a href="https://github.com">github</a></li>
+                        <!--social medial link placeholders-->
+                        <li><a>linkedin</a></li>
+                        <li><a>github</a></li>
                     </ul>
                 </nav>                 
             </address>
