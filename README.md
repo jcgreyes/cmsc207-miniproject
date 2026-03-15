@@ -15,11 +15,6 @@ To view the webage, open browser and type in the url: https://jcgreyes.github.io
 
 Found a bug or have an idea? Fork the repo, make changes, and submit a pull request.  
 
-## License  
-
-This project is licensed under the MIT License.  
-See the `LICENSE` file for details.  
-
 ## Contact  
 
 Created by Juan Carlos Reyes (sabadoride@gmail.com)  
