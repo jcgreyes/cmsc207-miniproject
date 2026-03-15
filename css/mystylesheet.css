@@ -153,12 +153,18 @@ img.medium {
 }
 
 .wrappable-container {
-    display: flex;
-    flex-wrap: wrap;
+    display: flex;    
     justify-content: space-between;
+    flex-direction: row;    
 }
 
 .credits {
     font-size: 18px;
     font-style: italic;
+}
+
+@media all and (max-width: 900px){
+    .wrappable-container{
+        flex-direction: column;
+    }
 }
