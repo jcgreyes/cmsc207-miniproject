@@ -152,6 +152,7 @@ img.medium {
     max-width: 400px;
 }
 
+
 .wrappable-container {
     display: flex;    
     justify-content: space-between;
@@ -166,5 +167,9 @@ img.medium {
 @media screen and (orientation: portrait){
     .wrappable-container{
         flex-direction: column;
+    }
+
+    body {
+        width: 80%
     }
 }
