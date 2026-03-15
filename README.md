@@ -15,6 +15,10 @@ To view the webage, open browser and type in the url: https://jcgreyes.github.io
 
 Found a bug or have an idea? Fork the repo, make changes, and submit a pull request.  
 
+## License
+
+All rights reserved. Except for the AI-generated image, all photos in this web page are owned by Juan Carlos Reyes.  
+
 ## Contact  
 
 Created by Juan Carlos Reyes (sabadoride@gmail.com)  
