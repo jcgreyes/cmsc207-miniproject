@@ -163,7 +163,7 @@ img.medium {
     font-style: italic;
 }
 
-@media all and (max-width: 900px){
+@media screen and (orientation: portrait){
     .wrappable-container{
         flex-direction: column;
     }
