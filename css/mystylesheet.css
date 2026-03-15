@@ -125,9 +125,6 @@ nav ul{
 nav ul li{
     margin: 0px;
 
-    padding-left: 2px;
-    padding-right: 2px;
-
     background-color: lightblue;
 
     display: inline;    
