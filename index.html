@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Juan Carlos Reyes</title>
+        <link type="text/css" rel="stylesheet" href="css/mystylesheet.css"/>
+    </head>
+
+    <body>
+
+        <header>
+            <div class="wrappable-container">
+                <h1>Juan Carlos Reyes</h1>
+                <nav>
+                    <ul>
+                        <li class="selected">Home</li>
+                        <li><a href="work.html">My Works</a></li>
+                        <li><a href="blog.html">My Blog</a></li>
+                    </ul>
+                </nav>
+            </div>   
+        </header>
+
+        <main>
+
+            <div class="container">
+                <section>  
+                    <p>Hi! I'm <button onClick="changeContent('main'); changeImage('images/jc-main-pic.png');">JC</button>, 
+                        a student at the University of the Philippines Open University. 
+                        <br/>
+                        I currently work in the semiconductor industry as a 
+                        <button onClick="changeContent('work'); changeImage('images/my-work.png');">wafer test engineer</button>.
+                        <br />
+                        I love <button onClick="changeContent('bicycles'); changeImage('images/jc-campy.png')">bicycles</button> and 
+                        <button onClick="changeContent('cycling'); changeImage('images/jc-bike.png')">cycling</button>, 
+                        though I ride lot less now.
+                        <br />
+                        I like joining <button onClick="changeContent('running'); changeImage('images/jc-run.png')">fun runs</button>.
+                        <br />
+                        I have a <button onClick="changeContent('tsundoku'); changeImage('images/jc-books.png')">tsundoku</button>
+                        -- which I plan (hope) to read when I retire...
+                    </p>
+                </section>
+
+                <div class="wrappable-container">        
+                    <section class="centered container-content">
+                        <img class="medium" id="display-image" src="images/jc-main-pic.png" alt="jc's images"/>
+                    </section>
+                    <section class="container-content">
+                        <p id="display-text">
+                            Hello there!
+                        </p>
+                    </section>
+                </div>
+
+            </div>
+        </main>
+
+        <footer>
+            <address>
+                <p>
+                    You can contact through email at: <a href="sabadoride@gmail.com">sabadoride@gmail.com</a>
+                    <br />
+                    or find me on:
+                </p>
+                <nav>
+                    <ul>
+                        <li><a href="https://www.linkedin.com">linkedin</a></li>
+                        <li><a href="https://github.com">github</a></li>
+                    </ul>
+                </nav>                 
+            </address>
+                <p>
+                    &copy; 2026 Juan Carlos Reyes
+                </p>
+        </footer>
+
+        <!-- reusable script -->
+        <script src="js/script.js"></script>
+
+        <!-- script applicable only this webpage -->
+        <script>
+            function changeContent(newContent){
+
+                var text = document.getElementById("display-text")
+
+                switch (newContent){
+                    case "work":
+                        text.innerHTML = "Fun Fact: I've been in the semiconductor industry for more than 20 years!<br/><br/><span class='credits'>To protect sensitive information, image was generated using Google Gemini.</span>"
+                        break;
+                    case "bicycles":
+                        text.innerHTML = "Upgraditis: an obsessive desire to upgrade your bike (or any equipment), in pursuit of marginal gains."
+                        break;
+                    case "cycling":
+                        text.innerHTML = "Fun Fact: I've climbed the highest paved road in Taiwan by bike, from sea-level to 3275 meters! Twice!"
+                        break;
+                    case "running":
+                        text.innerHTML = "Fun Fact: I once joined a marathon where I ran half of the event without shoes! I made a bad decision by wearing shoes that I bought the night before, and my feet suffered the whole 42km!. I finished the marathon and learned a valuable lesson -- never wear new shoes on major events!"
+                        break;
+                    case "tsundoku":
+                        text.innerHTML = "Tsundoku is the act of purchasing, owning, or stacking unread books, with the intent to read them later. I used to be an avid reader before. I never stopped buying books regularly, but just can't find the time to read them now."
+                        break;
+                    default:
+                        text.innerHTML = "Hello there!"
+                }    
+            }           
+        </script>
+    </body>
+</html>

@@ -1,0 +1,164 @@
+html {
+    background-color: whitesmoke;
+    
+    background-size: 10px 10px;
+    background-image:
+        linear-gradient(to right, lightgrey 1px, transparent 1px),
+        linear-gradient(to bottom, lightgrey 1px, transparent 1px);
+        
+}
+
+@keyframes bgIntro {
+    from {background-color: #1f1f1f;}
+    to {background-color: whitesmoke;}
+}
+
+body {
+    max-width: 1024px;
+    min-width: 256px;
+
+    margin-top: 24px;
+    margin-left: auto;
+    margin-right: auto;
+
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 4px;
+    padding-bottom: 12px;
+
+    background-color: whitesmoke;
+
+    font-family: 'Courier New', Courier, monospace;
+
+    animation-name: bgIntro;
+    animation-duration: 5s;
+
+}
+
+header {
+    margin-left: 12px;
+    margin-right: 12px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+
+    padding-top: 0px;
+}
+
+header h1{ 
+    margin-top: 2px;
+
+    color:#1f1f1f;
+}
+
+footer {
+    margin-left: 12px;
+    margin-right: 12px;
+
+    color:#1f1f1f;
+}
+
+section {
+    margin: 12px;
+
+    padding: 12px;
+
+    border: 2px dashed #1f1f1f;
+
+    font-size: 20px;
+    color:#1f1f1f;
+}
+
+section p {
+    margin: 0px;
+}
+
+section.centered {
+    text-align: center;
+}
+
+section.container-content {
+    width: 42%;
+    min-width: 424px;
+}
+
+button {
+    background-color: lightblue;
+
+    border: none;
+
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+
+    color: #1f1f1f;
+
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: steelblue;
+
+    color: whitesmoke;
+}
+
+nav {
+    width: fit-content;
+    height: fit-content;
+
+    margin-top: 2px;
+    margin-bottom: 2px;
+
+    padding: 0px;
+
+    border: 2px dashed #1f1f1f;
+
+    font-size: 20px;
+}
+
+nav ul{
+    margin: 0px;
+
+    padding: 6px;
+
+    list-style-type: none;    
+}
+
+nav ul li{
+    margin: 0px;
+
+    padding-left: 2px;
+    padding-right: 2px;
+
+    background-color: lightblue;
+
+    display: inline;    
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #1f1f1f;
+}
+
+nav ul li.selected {
+    background-color: steelblue;
+    color: whitesmoke;
+}
+
+nav ul li a:hover{
+    background-color: steelblue;
+    color: whitesmoke;
+}
+
+img.medium {
+    max-width: 400px;
+}
+
+.wrappable-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.credits {
+    font-size: 18px;
+    font-style: italic;
+}
